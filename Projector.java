@@ -38,7 +38,7 @@ class Projector{
     public void turnOff(){
 
     isOn = false;
-    System.out.println("The projector is now on");
+    System.out.println("The projector is now off");
 
   }
 
