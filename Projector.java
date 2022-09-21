@@ -19,7 +19,7 @@ class Projector{
     isConnected = false;
   }
 
-    public Projector(int height, boolean isOne, boolean isConnected){
+    public Projector(int height, boolean isOn, boolean isConnected){
 
     
     this.height = height;
@@ -59,5 +59,9 @@ class Projector{
     System.out.println("The height of your projector is now " + height + " meters");
 
   }
+  
+  public String toString(){
+    
+    return "Height: " + height + "\nIs it on: " + isOn + "\nIs is connected: " + isConnected;
 
 }
