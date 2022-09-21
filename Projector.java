@@ -4,6 +4,7 @@ class Projector{
   private int height;
   private boolean isOn;
   private boolean isConnected;
+  private Box newBox;
 
 
 
@@ -13,6 +14,10 @@ class Projector{
     isConnected = false;
   }
 
+
+  public Projector(Box newBox){
+    this.newBox = newBox;
+  }
   public Projector(int height){
     this.height = height;
     isOn = false;
@@ -60,4 +65,14 @@ class Projector{
 
   }
 
+  public void projectorWithBox(){
+    if (newBox != null){
+      System.out.println("There is a box on top of my projector. Its dimensions are: \n" + newBox);
+  } 
+    else{
+      System.out.println("You need to place a box on the projector");
+    }
+
 }
+}
+

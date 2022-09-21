@@ -5,6 +5,9 @@ class Main {
     Projector a = new Projector(8);
     Projector c = new Projector(2, false, false);
 
+    Box m = new Box("brown", true, true);
+    Projector q = new Projector(m);
+
   
 
     a.turnOn();
@@ -23,6 +26,6 @@ class Main {
     b.turnOff();
     c.turnOff();
 
-    
+    q.projectorWithBox();
   }
 }
